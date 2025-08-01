@@ -172,12 +172,54 @@
   text-align: center;
   line-height: 1.2;
   margin: 0.25em;
+  color:black;
 }
 
 .tagline small {
   font-size: 1.2rem;
   font-weight: 400;
   color: #888;
+}
+
+.projects {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: larger;
+  padding-top: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  background-color: #386a80;
+  padding-bottom: 2em;
+}
+
+.container-wrapper {
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: flex;
+  align-self: center;
+}
+
+.container {
+  border-radius: 5px;
+  float: left;
+  width: 25em;
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.container:hover {
+  color: #386a80;
+  box-shadow: #0ff 1px 1px 2px;
 }
 
 @keyframes rotateIcosahedeon {
