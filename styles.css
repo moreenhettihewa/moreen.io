@@ -166,6 +166,20 @@
   background-color: #386a80;
 }
 
+.tagline {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0.25em;
+}
+
+.tagline small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #888;
+}
+
 @keyframes rotateIcosahedeon {
   0% {
     transform: rotateX(0deg) rotateZ(0deg);
