@@ -226,6 +226,23 @@
   box-shadow: #0ff 1px 1px 2px;
 }
 
+.side-icons {
+  top: 70vh;
+  position: fixed;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 3em;
+  border-radius: 5px;
+}
+
+.side-icon {
+  height: 3em;
+  padding:1em;
+  background-color: rgb(0, 255, 234);
+  box-shadow: -2px 2px 2px gray;
+}
+
 @keyframes rotateIcosahedeon {
   0% {
     transform: rotateX(0deg) rotateZ(0deg);
@@ -247,12 +264,12 @@
     transform: scale(1.5);
     opacity: 0.5;
   }
-  80% {
+  70% {
     transform: scale(2.5);
     opacity: 0.2;
   }
   100% {
-    transform: scale(3);
+    transform: scale(6);
     opacity: 0;
   }
 }
