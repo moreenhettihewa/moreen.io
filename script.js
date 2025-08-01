@@ -1,4 +1,4 @@
-const target = document.querySelector(".animated-frame");
+const target = document.querySelector(".ripple-frame");
 const ripple = document.querySelector(".ripple");
 
 target.addEventListener("mousemove", (e) => {

@@ -1,3 +1,7 @@
+.ripple-frame {
+  cursor: none;
+}
+
 .animated-frame {
   height: 68vh;
   background: #386a80;
