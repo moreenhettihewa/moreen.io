@@ -20,3 +20,20 @@ target.addEventListener("mouseleave", () => {
   ripple.style.opacity = "0";
   ripple.style.display = "none";
 });
+
+function onClickProject() {
+  const modalElement = document.getElementById("projectModal");
+  modalElement.style.display = "block";
+
+  const closeModalElement = document.getElementById("closeModal");
+
+  closeModalElement.onclick = function () {
+    modalElement.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modalElement) {
+      modalElement.style.display = "none";
+    }
+  };
+}
