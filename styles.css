@@ -50,102 +50,83 @@
 }
 
 .face:nth-of-type(1) {
-  transform: rotateY(0deg) rotateX(var(--rotateXValue))
-    translateZ(var(--translateValZ));
+  transform: rotateY(0deg) rotateX(var(--rotateXValue)) translateZ(var(--translateValZ));
 }
+
 .face:nth-of-type(2) {
-  transform: rotateY(72deg) rotateX(var(--rotateXValue))
-    translateZ(var(--translateValZ));
+  transform: rotateY(72deg) rotateX(var(--rotateXValue)) translateZ(var(--translateValZ));
 }
+
 .face:nth-of-type(3) {
-  transform: rotateY(-72deg) rotateX(var(--rotateXValue))
-    translateZ(var(--translateValZ));
+  transform: rotateY(-72deg) rotateX(var(--rotateXValue)) translateZ(var(--translateValZ));
 }
+
 .face:nth-of-type(4) {
-  transform: rotateY(144deg) rotateX(var(--rotateXValue))
-    translateZ(var(--translateValZ));
+  transform: rotateY(144deg) rotateX(var(--rotateXValue)) translateZ(var(--translateValZ));
 }
+
 .face:nth-of-type(5) {
-  transform: rotateY(-144deg) rotateX(var(--rotateXValue))
-    translateZ(var(--translateValZ));
+  transform: rotateY(-144deg) rotateX(var(--rotateXValue)) translateZ(var(--translateValZ));
 }
 
 .face:nth-of-type(6) {
-  transform: rotateY(36deg) rotateX(var(--rotateXValueMidTop))
-    translateZ(var(--translateValZMidTop))
-    translateY(var(--translateValYMidTop));
+  transform: rotateY(36deg) rotateX(var(--rotateXValueMidTop)) translateZ(var(--translateValZMidTop)) translateY(var(--translateValYMidTop));
 }
+
 .face:nth-of-type(7) {
-  transform: rotateY(108deg) rotateX(var(--rotateXValueMidTop))
-    translateZ(var(--translateValZMidTop))
-    translateY(var(--translateValYMidTop));
+  transform: rotateY(108deg) rotateX(var(--rotateXValueMidTop)) translateZ(var(--translateValZMidTop)) translateY(var(--translateValYMidTop));
 }
+
 .face:nth-of-type(8) {
-  transform: rotateY(-36deg) rotateX(var(--rotateXValueMidTop))
-    translateZ(var(--translateValZMidTop))
-    translateY(var(--translateValYMidTop));
+  transform: rotateY(-36deg) rotateX(var(--rotateXValueMidTop)) translateZ(var(--translateValZMidTop)) translateY(var(--translateValYMidTop));
 }
+
 .face:nth-of-type(9) {
-  transform: rotateY(180deg) rotateX(var(--rotateXValueMidTop))
-    translateZ(var(--translateValZMidTop))
-    translateY(var(--translateValYMidTop));
+  transform: rotateY(180deg) rotateX(var(--rotateXValueMidTop)) translateZ(var(--translateValZMidTop)) translateY(var(--translateValYMidTop));
 }
+
 .face:nth-of-type(10) {
-  transform: rotateY(-108deg) rotateX(var(--rotateXValueMidTop))
-    translateZ(var(--translateValZMidTop))
-    translateY(var(--translateValYMidTop));
+  transform: rotateY(-108deg) rotateX(var(--rotateXValueMidTop)) translateZ(var(--translateValZMidTop)) translateY(var(--translateValYMidTop));
 }
 
 .face:nth-of-type(11) {
-  transform: rotateY(36deg) rotateX(var(--rotateXValueMidBottom))
-    translateZ(var(--translateValZMidBottom))
-    translateY(var(--translateValYMidBottom));
+  transform: rotateY(36deg) rotateX(var(--rotateXValueMidBottom)) translateZ(var(--translateValZMidBottom)) translateY(var(--translateValYMidBottom));
 }
+
 .face:nth-of-type(12) {
-  transform: rotateY(108deg) rotateX(var(--rotateXValueMidBottom))
-    translateZ(var(--translateValZMidBottom))
-    translateY(var(--translateValYMidBottom));
+  transform: rotateY(108deg) rotateX(var(--rotateXValueMidBottom)) translateZ(var(--translateValZMidBottom)) translateY(var(--translateValYMidBottom));
 }
+
 .face:nth-of-type(13) {
-  transform: rotateY(-36deg) rotateX(var(--rotateXValueMidBottom))
-    translateZ(var(--translateValZMidBottom))
-    translateY(var(--translateValYMidBottom));
+  transform: rotateY(-36deg) rotateX(var(--rotateXValueMidBottom)) translateZ(var(--translateValZMidBottom)) translateY(var(--translateValYMidBottom));
 }
+
 .face:nth-of-type(14) {
-  transform: rotateY(180deg) rotateX(var(--rotateXValueMidBottom))
-    translateZ(var(--translateValZMidBottom))
-    translateY(var(--translateValYMidBottom));
+  transform: rotateY(180deg) rotateX(var(--rotateXValueMidBottom)) translateZ(var(--translateValZMidBottom)) translateY(var(--translateValYMidBottom));
 }
+
 .face:nth-of-type(15) {
-  transform: rotateY(-108deg) rotateX(var(--rotateXValueMidBottom))
-    translateZ(var(--translateValZMidBottom))
-    translateY(var(--translateValYMidBottom));
+  transform: rotateY(-108deg) rotateX(var(--rotateXValueMidBottom)) translateZ(var(--translateValZMidBottom)) translateY(var(--translateValYMidBottom));
 }
 
 .face:nth-of-type(16) {
-  transform: rotateY(0deg) rotateX(var(--rotateXValueBottom))
-    translateY(var(--translateValYBottom))
-    translateZ(var(--translateValZBottom));
+  transform: rotateY(0deg) rotateX(var(--rotateXValueBottom)) translateY(var(--translateValYBottom)) translateZ(var(--translateValZBottom));
 }
+
 .face:nth-of-type(17) {
-  transform: rotateY(72deg) rotateX(var(--rotateXValueBottom))
-    translateY(var(--translateValYBottom))
-    translateZ(var(--translateValZBottom));
+  transform: rotateY(72deg) rotateX(var(--rotateXValueBottom)) translateY(var(--translateValYBottom)) translateZ(var(--translateValZBottom));
 }
+
 .face:nth-of-type(18) {
-  transform: rotateY(-72deg) rotateX(var(--rotateXValueBottom))
-    translateY(var(--translateValYBottom))
-    translateZ(var(--translateValZBottom));
+  transform: rotateY(-72deg) rotateX(var(--rotateXValueBottom)) translateY(var(--translateValYBottom)) translateZ(var(--translateValZBottom));
 }
+
 .face:nth-of-type(19) {
-  transform: rotateY(144deg) rotateX(var(--rotateXValueBottom))
-    translateY(var(--translateValYBottom))
-    translateZ(var(--translateValZBottom));
+  transform: rotateY(144deg) rotateX(var(--rotateXValueBottom)) translateY(var(--translateValYBottom)) translateZ(var(--translateValZBottom));
 }
+
 .face:nth-of-type(20) {
-  transform: rotateY(-144deg) rotateX(var(--rotateXValueBottom))
-    translateY(var(--translateValYBottom))
-    translateZ(var(--translateValZBottom));
+  transform: rotateY(-144deg) rotateX(var(--rotateXValueBottom)) translateY(var(--translateValYBottom)) translateZ(var(--translateValZBottom));
 }
 
 .ripple {
@@ -176,13 +157,15 @@
   text-align: center;
   line-height: 1.2;
   margin: 0.25em;
-  color:black;
+  color: black;
+  text-transform: uppercase;
 }
 
 .tagline small {
   font-size: 1.2rem;
   font-weight: 400;
   color: #888;
+  text-transform: capitalize;
 }
 
 .projects {
@@ -232,13 +215,15 @@
   right: 0%;
   display: flex;
   flex-direction: column;
+  opacity: 80%;
   width: 3em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .side-icon {
   height: 3em;
-  padding:1em;
+  padding: 1em;
   background-color: rgb(0, 255, 234);
   box-shadow: -2px 2px 2px gray;
 }
@@ -253,7 +238,8 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(21, 58, 63, 0.95);
+  background-color: rgb(21, 58, 63);
+  animation: openModal 0.5s ease-in-out;
 }
 
 
@@ -275,18 +261,87 @@
 
 .close:hover,
 .close:focus {
-  color:#000;
+  color: #000;
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
+}
+
+.border-spinner {
+  --borderWidth: 35em;
+  position: absolute;
+  width: var(--borderWidth);
+  height: var(--borderWidth);
+  background: transparent;
+  overflow: hidden;
+  transform: translateZ(30deg);
+}
+
+.border-spinner::after {
+  content: '';
+  position: absolute;
+  width: calc(80%);
+  height: calc(80%);
+  border: 2px solid gold;
+  box-sizing: border-box;
+  transition: 2s;
+}
+
+.border-spinner__tl {
+  left: 0;
+  top: 0;
+  --borderWidth: 25em;
+}
+
+.border-spinner__tr {
+  right: 0;
+  top: 0;
+}
+
+.border-spinner__bl {
+  bottom: 0;
+  left: 0;
+  --borderWidth: 20em;
+}
+
+.border-spinner__br {
+  bottom: 0;
+  right: 0;
+  --borderWidth: 25em;
+}
+
+.border-spinner__tl::after {
+  top: -6em;
+  left: -8em;
+  animation: spinBorder 20s linear infinite;
+}
+
+.border-spinner__bl::after {
+  bottom: -2em;
+  left: -5em;
+  animation: spinBorder 20s reverse infinite;
+}
+
+.border-spinner__tr::after {
+  top: -1em;
+  right: -3em;
+  animation: spinBorder 20s reverse infinite;
+}
+
+.border-spinner__br::after {
+  bottom: -3em;
+  right: -6em;
+  animation: spinBorder 20s linear infinite;
 }
 
 @keyframes rotateIcosahedeon {
   0% {
     transform: rotateX(0deg) rotateZ(0deg);
   }
+
   50% {
     transform: rotateX(180deg) rotateZ(180deg);
   }
+
   100% {
     transform: rotateX(360deg) rotateZ(360deg);
   }
@@ -297,16 +352,37 @@
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.5);
     opacity: 0.5;
   }
+
   70% {
     transform: scale(2.5);
     opacity: 0.2;
   }
+
   100% {
     transform: scale(6);
     opacity: 0;
+  }
+}
+
+@keyframes spinBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes openModal {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
