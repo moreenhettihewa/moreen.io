@@ -21,19 +21,48 @@ target.addEventListener("mouseleave", () => {
   ripple.style.display = "none";
 });
 
-function onClickProject() {
+function onClickProject(id) {
+ 
+  const projectDataHtml = projectDocPath(id);
+  fetch(projectDataHtml)
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("loadingContent").innerHTML = html;
+  });
+
   const modalElement = document.getElementById("projectModal");
   modalElement.style.display = "block";
 
   const closeModalElement = document.getElementById("closeModal");
 
-  closeModalElement.onclick = function () {
+  closeModalElement.onclick = () => {
     modalElement.style.display = "none";
   };
 
-  window.onclick = function (event) {
+  window.onclick = (event) => {
     if (event.target == modalElement) {
       modalElement.style.display = "none";
     }
   };
+}
+
+function projectDocPath(id) {
+  switch (id) {
+    case 1:
+      return "pages/dynamicslk.html";
+    case 2:
+      return "pages/chanuka-portfolio.html";
+    case 3:
+      return "pages/my-notebook.html";
+    case 4:
+      return "pages/moreen-portfolio.html";
+    case 5:
+      return "pages/fdm-travel.html";
+    case 6:
+      return "pages/travelbox-trip.html";
+    case 7:
+      return "pages/pro-payroll.html";
+    default:
+      return null;
+  }
 }
