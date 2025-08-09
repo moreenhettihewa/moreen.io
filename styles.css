@@ -195,12 +195,14 @@
 }
 
 .container {
+  height: 4em;
   border-radius: 5px;
   float: left;
-  width: 25em;
+  width: 15em;
   padding: 1em;
   margin: 1em;
   cursor: pointer;
+  align-content: center;
   background-color: aliceblue;
 }
 
@@ -331,6 +333,32 @@
   bottom: -3em;
   right: -6em;
   animation: spinBorder 20s linear infinite;
+}
+
+/* Project pages */
+
+.project-container {
+  padding: 2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.p-title {
+  font-size: 30px;
+  font-weight: 600;
+  color:#386a80;
+}
+
+.p-subtitle {
+  color:goldenrod;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.p-content {
+  color:#3f3c3c;
+  font-weight: 200;
 }
 
 @keyframes rotateIcosahedeon {
