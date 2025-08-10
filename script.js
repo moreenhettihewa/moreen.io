@@ -31,6 +31,7 @@ function onProjectCardHover() {
     const span = container.querySelector("span");
 
     container.addEventListener("mouseenter", () => {
+
       const left = document.createElement("div");
       left.className = "left-arrow left-1-arrow";
 
@@ -39,13 +40,12 @@ function onProjectCardHover() {
       
       container.insertBefore(left, span);
       container.insertBefore(right, span.nextSibling);
-    });
 
-    container.addEventListener("mouseleave", () => {
-      container
-        .querySelectorAll(".left-arrow, .right-arrow")
-        .forEach((el) => el.remove());
-    });
+      container.addEventListener("mouseleave", () => {
+        container
+          .querySelectorAll(".left-arrow, .right-arrow")
+          .forEach((el) => el.remove());
+      });
   });
 }
 
