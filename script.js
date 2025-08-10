@@ -31,22 +31,14 @@ function onProjectCardHover() {
     const span = container.querySelector("span");
 
     container.addEventListener("mouseenter", () => {
-      const left1 = document.createElement("div");
-      left1.className = "left-arrow left-1-arrow";
+      const left = document.createElement("div");
+      left.className = "left-arrow left-1-arrow";
 
-      const left2 = document.createElement("div");
-      left2.className = "left-arrow left-2-arrow";
-
-      const right1 = document.createElement("div");
-      right1.className = "right-arrow right-1-arrow";
-
-      const right2 = document.createElement("div");
-      right2.className = "right-arrow right-2-arrow";
-
-      container.insertBefore(left2, span);
-      container.insertBefore(left1, left2);
-      container.insertBefore(right1, span.nextSibling);
-      container.appendChild(right2);
+      const right = document.createElement("div");
+      right.className = "right-arrow right-1-arrow";
+      
+      container.insertBefore(left, span);
+      container.insertBefore(right, span.nextSibling);
     });
 
     container.addEventListener("mouseleave", () => {
