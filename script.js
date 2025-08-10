@@ -1,25 +1,61 @@
-const target = document.querySelector(".ripple-frame");
-const ripple = document.querySelector(".ripple");
+onRippleMove()
+onProjectCardHover();
 
-target.addEventListener("mousemove", (e) => {
-  const rect = target.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
+function onRippleMove() {
+  const target = document.querySelector(".ripple-frame");
+  const ripple = document.querySelector(".ripple");
 
-  ripple.style.left = `${x}px`;
-  ripple.style.top = `${y}px`;
-  ripple.style.display = "inline";
-  ripple.style.width = ripple.style.height = "20px";
-  ripple.style.transform = "translate(-50%, -50%)";
-  ripple.style.animation = "animatedRipple 0.75s ease-out infinite";
-  ripple.style.opacity = "1";
-});
+  target.addEventListener("mousemove", (e) => {
+    const rect = target.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
-target.addEventListener("mouseleave", () => {
-  ripple.style.transform = "translate(-50%, -50%) scale(0)";
-  ripple.style.opacity = "0";
-  ripple.style.display = "none";
-});
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+    ripple.style.display = "inline";
+    ripple.style.width = ripple.style.height = "20px";
+    ripple.style.transform = "translate(-50%, -50%)";
+    ripple.style.animation = "animatedRipple 0.75s ease-out infinite";
+    ripple.style.opacity = "1";
+  });
+
+  target.addEventListener("mouseleave", () => {
+    ripple.style.transform = "translate(-50%, -50%) scale(0)";
+    ripple.style.opacity = "0";
+    ripple.style.display = "none";
+  });
+}
+
+function onProjectCardHover() {
+  document.querySelectorAll(".container").forEach((container) => {
+    const span = container.querySelector("span");
+
+    container.addEventListener("mouseenter", () => {
+      const left1 = document.createElement("div");
+      left1.className = "left-arrow left-1-arrow";
+
+      const left2 = document.createElement("div");
+      left2.className = "left-arrow left-2-arrow";
+
+      const right1 = document.createElement("div");
+      right1.className = "right-arrow right-1-arrow";
+
+      const right2 = document.createElement("div");
+      right2.className = "right-arrow right-2-arrow";
+
+      container.insertBefore(left2, span);
+      container.insertBefore(left1, left2);
+      container.insertBefore(right1, span.nextSibling);
+      container.appendChild(right2);
+    });
+
+    container.addEventListener("mouseleave", () => {
+      container
+        .querySelectorAll(".left-arrow, .right-arrow")
+        .forEach((el) => el.remove());
+    });
+  });
+}
 
 function onClickProject(id) {
  
