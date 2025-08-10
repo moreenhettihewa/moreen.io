@@ -202,13 +202,54 @@
   padding: 1em;
   margin: 1em;
   cursor: pointer;
+  display: flex;
   align-content: center;
+  justify-content: center;
+  align-items: center;
   background-color: aliceblue;
 }
 
 .container:hover {
   color: #386a80;
   box-shadow: #0ff 1px 1px 2px;
+  color: goldenrod;
+  transition: 1s;
+}
+
+/* Container button animations */
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  width: 2em;
+  height: 3.5em;
+  background-color: goldenrod;
+}
+
+.right-arrow {
+  clip-path: polygon(0% 0%, 100% 25%, 100% 75%, 0 100%, 0 95%, 90% 70%, 90% 30%, 0 5%);
+  animation: moveRightArrow 2s infinite;
+}
+
+.left-arrow {
+  clip-path: polygon(0% 25%, 100% 0%, 100% 5%, 5% 30%, 5% 70%, 100% 95%, 100% 100%, 0 75%);
+  animation: moveLeftArrow 2s infinite;
+}
+
+.left-1-arrow {
+  margin-left: 2em;
+}
+
+.left-2-arrow {
+  margin-left: 3.5em;
+}
+
+.right-1-arrow {
+  margin-right: 2em;
+}
+
+.right-2-arrow {
+  margin-right: 3.5em;
 }
 
 .side-icons {
@@ -412,5 +453,39 @@
   }
   to {
     opacity: 100%;
+  }
+}
+
+@keyframes moveRightArrow {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: 50%;
+    transform: translateX(2.75em);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(8em);
+  }
+}
+
+@keyframes moveLeftArrow {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+ 
+  30% {
+    opacity: 50%;
+    transform: translateX(-2.75em);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-8em);
   }
 }
