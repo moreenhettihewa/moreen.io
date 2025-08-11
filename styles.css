@@ -31,6 +31,7 @@
   position: relative;
   transform-style: preserve-3d;
   animation: rotateIcosahedeon 10s ease-in-out infinite;
+  z-index: 1;
 }
 
 .face {
@@ -295,75 +296,73 @@
   cursor: pointer;
 }
 
-.border-spinner {
-  --borderWidth: 35em;
-  position: absolute;
-  width: var(--borderWidth);
-  height: var(--borderWidth);
-  background: transparent;
+.border-spinners {
+  width: 100%;
+  height: 68vh;
   overflow: hidden;
-  transform: translateZ(30deg);
+  position: absolute;
 }
 
-.border-spinner::after {
-  content: '';
+.border-spinner {
+  --borderWidth: 35em;
+  --borderHeight: 33em;
   position: absolute;
-  width: calc(80%);
-  height: calc(80%);
-  border: 2px solid gold;
-  box-sizing: border-box;
-  transition: 2s;
+  width: var(--borderWidth);
+  height: var(--borderHeight);
+  background: gold;
+  clip-path: polygon(40% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0, 60% 0, 60% 0.5%, 25.5% 0.5%, 0.5% 50%, 25.5% 99.5%, 74.5% 99.5%, 99.5% 50%, 74.5% 0.5%, 40% 0.5%);
 }
 
 .border-spinner__tl {
-  left: 0;
-  top: 0;
   --borderWidth: 25em;
-}
-
-.border-spinner__tr {
-  right: 0;
-  top: 0;
+  --borderHeight: 22em;
+  top: -6em;
+  left: -8em;
+  animation: spinBorder 15s linear infinite;
 }
 
 .border-spinner__bl {
-  bottom: 0;
-  left: 0;
-  --borderWidth: 20em;
-}
-
-.border-spinner__br {
-  bottom: 0;
-  right: 0;
-  --borderWidth: 25em;
-}
-
-.border-spinner__tl::after {
-  top: -6em;
-  left: -8em;
-  animation: spinBorder 20s linear infinite;
-}
-
-.border-spinner__bl::after {
+  --borderWidth: 15em;
+  --borderHeight: 13em;
   bottom: -2em;
   left: -5em;
   animation: spinBorder 20s reverse infinite;
 }
 
-.border-spinner__tr::after {
+.border-spinner__tr {
+  --borderWidth: 30em;
+  --borderHeight: 28em;
   top: -1em;
   right: -3em;
   animation: spinBorder 20s reverse infinite;
 }
 
-.border-spinner__br::after {
+.border-spinner__br {
+  --borderWidth: 20em;
+  --borderHeight: 18em;
   bottom: -3em;
   right: -6em;
   animation: spinBorder 20s linear infinite;
 }
 
-/* Project pages */
+.border-spinner__lm {
+  --borderWidth: 12em;
+  --borderHeight: 10em;
+  bottom: 12em;
+  left: 10em;
+  animation: spinBorder 20s linear infinite;
+}
 
+.border-spinner__rm {
+  --borderWidth: 8em;
+  --borderHeight: 7em;
+  bottom: 2em;
+  right: 20em;
+  animation-delay: 2s;
+  animation: spinBorder 20s reverse infinite;
+}
+
+/* Project pages */
 .project-container {
   padding: 2em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
