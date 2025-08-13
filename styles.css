@@ -42,6 +42,8 @@
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-bottom: 104px solid #0ff;
+    /* border-image: linear-gradient(to right, #0ff, #f0f, #ff0) 1; */
+
   opacity: 0.85;
   transform-origin: bottom center;
 }
@@ -285,6 +287,11 @@
   border: 1px solid #888;
   border-radius: 5px;
   width: 60%;
+  height: 60%;
+}
+
+.modal-bg-shapes {
+  position: absolute;
 }
 
 .close {
@@ -317,54 +324,109 @@
   clip-path: polygon(40% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0, 60% 0, 60% 0.5%, 25.5% 0.5%, 0.5% 50%, 25.5% 99.5%, 74.5% 99.5%, 99.5% 50%, 74.5% 0.5%, 40% 0.5%);
 }
 
-.border-spinner__tl {
-  --borderWidth: 25em;
+.border-spinner:nth-child(1){
+    --borderWidth: 25em;
   --borderHeight: 22em;
-  top: -6em;
-  left: -8em;
+  top: 2em;
+  right: 0em;
   animation: spinBorder 15s linear infinite;
 }
 
-.border-spinner__bl {
+.border-spinner:nth-child(2) {
   --borderWidth: 15em;
   --borderHeight: 13em;
-  bottom: -2em;
-  left: -5em;
+  bottom: 0em;
+  left: -3em;
   animation: spinBorder 20s reverse infinite;
 }
 
-.border-spinner__tr {
-  --borderWidth: 30em;
-  --borderHeight: 28em;
-  top: -1em;
-  right: -3em;
+.border-spinner:nth-child(3) {
+  --borderWidth: 15em;
+  --borderHeight: 13em;
+  top: 4em;
+  right: 20em;
   animation: spinBorder 20s reverse infinite;
 }
 
-.border-spinner__br {
+.border-spinner:nth-child(4){
   --borderWidth: 20em;
   --borderHeight: 18em;
-  bottom: -3em;
-  right: -6em;
+  bottom: 0em;
+  left: -30em;
+    background: #386a80;
   animation: spinBorder 20s linear infinite;
 }
 
-.border-spinner__lm {
-  --borderWidth: 12em;
+.border-spinner:nth-child(5){
+  --borderWidth: 7em;
+  --borderHeight: 6em;
+  bottom: 10em;
+  left: -40em;
+  animation: spinBorder 20s reverse infinite;
+}
+
+
+.border-spinner:nth-child(6){
+    --borderWidth: 12em;
   --borderHeight: 10em;
   bottom: 12em;
   left: 10em;
   animation: spinBorder 20s linear infinite;
 }
-
-.border-spinner__rm {
-  --borderWidth: 8em;
+.border-spinner:nth-child(7){
+    --borderWidth: 8em;
   --borderHeight: 7em;
-  bottom: 2em;
-  right: 20em;
+  top:1em;
   animation-delay: 2s;
   animation: spinBorder 20s reverse infinite;
 }
+
+.border-spinner:nth-child(8){
+    --borderWidth: 15em;
+  --borderHeight: 13em;
+  top: 10em;
+  left: 25em;
+    background: #386a80;
+
+  animation: spinBorder 20s reverse infinite;
+}
+
+.border-spinner:nth-child(9){
+   --borderWidth: 8em;
+  --borderHeight: 7em;
+    background: #386a80;
+  top: 5em;
+  left: 35em;
+  animation: spinBorder 10s linear infinite;
+}
+
+.border-spinner:nth-child(10){
+   --borderWidth: 8em;
+  --borderHeight: 7em;
+    background: #0ff;
+  top: 5em;
+  left: 35em;
+  animation: spinBorder 20s reverse infinite;
+}
+
+.border-spinner:nth-child(11){
+   --borderWidth: 8em;
+  --borderHeight: 7em;
+    background: #0ff;
+  top: 5em;
+  left: 35em;
+  animation: spinBorder 20s reverse infinite;
+}
+
+.border-spinner:nth-child(12){
+   --borderWidth: 8em;
+  --borderHeight: 7em;
+    background: #0ff;
+  top: 5em;
+  left: 35em;
+  animation: spinBorder 20s reverse infinite;
+}
+
 
 /* Project pages */
 .project-container {
@@ -389,6 +451,59 @@
 .p-content {
   color:#3f3c3c;
   font-weight: 200;
+}
+
+.border-bg-spinner {
+  --borderWidth: 15em;
+  --borderHeight: 13em;
+  position: absolute;
+  width: var(--borderWidth);
+  height: var(--borderHeight);
+  background: gold;
+  clip-path: polygon(40% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0, 60% 0, 60% 0.5%, 25.5% 0.5%, 0.5% 50%, 25.5% 99.5%, 74.5% 99.5%, 99.5% 50%, 74.5% 0.5%, 40% 0.5%);
+}
+
+.border-bg-spinner:nth-child(1) {
+  bottom: 0em;
+  left: -18.5em;
+  --borderWidth: 17em;
+  --borderHeight: 15em;
+  animation: spinBorder 20s reverse infinite;
+}
+
+.border-bg-spinner:nth-child(2) {
+  bottom: -15em;
+  left: -10em;
+  animation: spinBorder 30s linear infinite;
+}
+
+.border-bg-spinner:nth-child(3) {
+  bottom: -17em;
+  --borderHeight: 7em;
+  --borderWidth: 8em;
+  animation: spinBorder 10s reverse infinite;
+}
+
+.border-bg-spinner:nth-child(4) {
+  top: -24em;
+  right: -75em;
+  --borderHeight: 7em;
+  --borderWidth: 8em;
+  animation: spinBorder 30s linear infinite;
+}
+
+.border-bg-spinner:nth-child(5) {
+  top: -16em;
+  right: -75em;
+  animation: spinBorder 30s linear infinite;
+}
+
+.border-bg-spinner:nth-child(6) {
+  top: -28em;
+  right: -65em;
+  --borderHeight: 4em;
+  --borderWidth: 5em;
+  animation: spinBorder 10s reverse infinite;
 }
 
 @keyframes rotateIcosahedeon {
