@@ -321,6 +321,7 @@
   width: var(--borderWidth);
   height: var(--borderHeight);
   background: gold;
+  transform: scale(0.1);
   clip-path: polygon(40% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0, 60% 0, 60% 0.5%, 25.5% 0.5%, 0.5% 50%, 25.5% 99.5%, 74.5% 99.5%, 99.5% 50%, 74.5% 0.5%, 40% 0.5%);
 }
 
@@ -329,7 +330,7 @@
   --borderHeight: 22em;
   top: 2em;
   right: 0em;
-  animation: spinBorder 15s linear infinite;
+  animation:  showSpinner 0.5s ease-out 0s forwards, spinBorder 15s linear 0.5s infinite;
 }
 
 .border-spinner:nth-child(2) {
@@ -337,7 +338,7 @@
   --borderHeight: 13em;
   bottom: 0em;
   left: -3em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 0.5s forwards, spinBorder 20s reverse 1s infinite;
 }
 
 .border-spinner:nth-child(3) {
@@ -345,7 +346,7 @@
   --borderHeight: 13em;
   top: 4em;
   right: 20em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 1s ease-out 1s forwards, spinBorder 20s reverse  1.5s infinite;
 }
 
 .border-spinner:nth-child(4){
@@ -353,8 +354,8 @@
   --borderHeight: 18em;
   bottom: 0em;
   left: -30em;
-    background: #386a80;
-  animation: spinBorder 20s linear infinite;
+  background: #386a80;
+  animation: showSpinner 1s ease-out 1.5s forwards, spinBorder 20s linear 2s infinite;
 }
 
 .border-spinner:nth-child(5){
@@ -362,7 +363,7 @@
   --borderHeight: 6em;
   bottom: 10em;
   left: -40em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 2s forwards, spinBorder 20s reverse 2.5s infinite;
 }
 
 
@@ -371,14 +372,14 @@
   --borderHeight: 10em;
   bottom: 12em;
   left: 10em;
-  animation: spinBorder 20s linear infinite;
+  animation: showSpinner 0.5s ease-out 2.5s forwards, spinBorder 20s linear 3s infinite;
 }
 .border-spinner:nth-child(7){
     --borderWidth: 8em;
   --borderHeight: 7em;
   top:1em;
   animation-delay: 2s;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 3s forwards, spinBorder 20s reverse 3.5s infinite;
 }
 
 .border-spinner:nth-child(8){
@@ -388,7 +389,7 @@
   left: 25em;
     background: #386a80;
 
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 3.5s forwards, spinBorder 20s reverse 4s infinite;
 }
 
 .border-spinner:nth-child(9){
@@ -397,7 +398,7 @@
     background: #386a80;
   top: 5em;
   left: 35em;
-  animation: spinBorder 10s linear infinite;
+  animation: showSpinner 1s ease-out 4s forwards, spinBorder 10s linear 5s infinite;
 }
 
 .border-spinner:nth-child(10){
@@ -406,7 +407,7 @@
     background: #0ff;
   top: 5em;
   left: 35em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 1.5s forwards, spinBorder 20s reverse 2s infinite;
 }
 
 .border-spinner:nth-child(11){
@@ -415,7 +416,7 @@
     background: #0ff;
   top: 5em;
   left: 35em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 2.5s forwards, spinBorder 20s reverse 3s infinite;
 }
 
 .border-spinner:nth-child(12){
@@ -424,7 +425,7 @@
     background: #0ff;
   top: 5em;
   left: 35em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 0.5s ease-out 3s forwards, spinBorder 20s reverse 3.5s infinite;
 }
 
 
@@ -460,6 +461,7 @@
   width: var(--borderWidth);
   height: var(--borderHeight);
   background: gold;
+  transform: scale(0);
   clip-path: polygon(40% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0, 60% 0, 60% 0.5%, 25.5% 0.5%, 0.5% 50%, 25.5% 99.5%, 74.5% 99.5%, 99.5% 50%, 74.5% 0.5%, 40% 0.5%);
 }
 
@@ -468,20 +470,20 @@
   left: -18.5em;
   --borderWidth: 17em;
   --borderHeight: 15em;
-  animation: spinBorder 20s reverse infinite;
+  animation: showSpinner 1s ease-out 0s forwards, spinBorder 20s reverse 1s infinite;
 }
 
 .border-bg-spinner:nth-child(2) {
   bottom: -15em;
   left: -10em;
-  animation: spinBorder 30s linear infinite;
+  animation: showSpinner 1s ease-out 0.5s forwards, spinBorder 30s linear 1.5s infinite;
 }
 
 .border-bg-spinner:nth-child(3) {
   bottom: -17em;
   --borderHeight: 7em;
   --borderWidth: 8em;
-  animation: spinBorder 10s reverse infinite;
+  animation: showSpinner 1s ease-out 1.5s forwards, spinBorder 10s reverse 2.5s infinite;
 }
 
 .border-bg-spinner:nth-child(4) {
@@ -489,13 +491,13 @@
   right: -75em;
   --borderHeight: 7em;
   --borderWidth: 8em;
-  animation: spinBorder 30s linear infinite;
+  animation: showSpinner 1s ease-out 2s forwards, spinBorder 30s linear 3s infinite;
 }
 
 .border-bg-spinner:nth-child(5) {
   top: -16em;
   right: -75em;
-  animation: spinBorder 30s linear infinite;
+  animation: showSpinner 1s ease-out 2.5s forwards, spinBorder 30s linear 3.5s infinite;
 }
 
 .border-bg-spinner:nth-child(6) {
@@ -503,7 +505,7 @@
   right: -65em;
   --borderHeight: 4em;
   --borderWidth: 5em;
-  animation: spinBorder 10s reverse infinite;
+  animation: showSpinner 1s ease-out 3s forwards, spinBorder 10s reverse 4s infinite;
 }
 
 @keyframes rotateIcosahedeon {
@@ -591,5 +593,16 @@
   100% {
     opacity: 0;
     transform: translateX(-8em);
+  }
+}
+
+@keyframes showSpinner {
+  from {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
