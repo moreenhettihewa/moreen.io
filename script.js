@@ -1,5 +1,6 @@
 onRippleMove()
 onProjectCardHover();
+scrollIntoProjectSection();
 
 function onRippleMove() {
   const target = document.querySelector(".ripple-frame");
@@ -93,4 +94,31 @@ function projectDocPath(id) {
     default:
       return null;
   }
+}
+
+function scrollIntoProjectSection(){
+  const projects = document.querySelector('.projects');
+let triggered = false;
+
+window.addEventListener('wheel', (e) => {
+  // Only trigger when scrolling down
+  if (e.deltaY > 0 && !triggered && window.scrollY < projects.offsetTop) {
+    triggered = true;
+
+    // Scroll so bottom of projects is aligned with viewport bottom
+    const scrollTarget = projects.offsetTop + projects.offsetHeight - window.innerHeight;
+
+    window.scrollTo({
+      top: scrollTarget,
+      behavior: 'smooth'
+    });
+
+    e.preventDefault();
+  }
+
+  // Reset trigger when scrolling up
+  if (e.deltaY < 0) {
+    triggered = false;
+  }
+}, { passive: false });
 }
