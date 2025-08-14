@@ -4,7 +4,7 @@
 }
 
 .animated-frame {
-  height: 68vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,20 +155,20 @@
 }
 
 .tagline {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
   line-height: 1.2;
   margin: 0.25em;
-  color: #386a80;
-  text-transform: uppercase;
+  color:#386a80;
 }
 
 .tagline small {
   font-family: system-ui;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  color: #a7a4a4;
+  color: #386a80;
   text-transform: capitalize;
 }
 
@@ -500,13 +500,13 @@
   right: -75em;
   --borderHeight: 7em;
   --borderWidth: 8em;
-  animation: showSpinner 1s ease-out 2s forwards, spinBorder 30s linear 3s infinite;
+  animation: showSpinner 1s ease-out 0.25s forwards, spinBorder 30s linear 1.25s infinite;
 }
 
 .border-bg-spinner:nth-child(5) {
   top: -16em;
   right: -75em;
-  animation: showSpinner 1s ease-out 2.5s forwards, spinBorder 30s linear 3.5s infinite;
+  animation: showSpinner 1s ease-out 0.5s forwards, spinBorder 30s linear 1.5s infinite;
 }
 
 .border-bg-spinner:nth-child(6) {
@@ -514,7 +514,7 @@
   right: -65em;
   --borderHeight: 4em;
   --borderWidth: 5em;
-  animation: showSpinner 1s ease-out 3s forwards, spinBorder 10s reverse 4s infinite;
+  animation: showSpinner 1s ease-out 1s forwards, spinBorder 10s reverse 2s infinite;
 }
 
 @keyframes rotateIcosahedeon {
