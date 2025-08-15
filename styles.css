@@ -7,7 +7,7 @@ body {
 }
 
 .animated-frame {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,13 +182,13 @@ body {
   padding-top: 1em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
-  background: linear-gradient( 180deg,#386a80,rgb(58, 57, 57) );
+  background: linear-gradient( 0deg,#386a80,white );
   padding-bottom: 2em;
 }
 
 .projects > span:first-of-type{
   font-size: 28px;
-  color:whitesmoke;
+  color:goldenrod;
 }
 
 .container-wrapper {
@@ -218,13 +218,13 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+  background-color: white;
+  color:#386a80;
+  clip-path: polygon(10% 0, 90% 0, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0 75%, 0 25%);
 }
 
 .container:hover {
-  color: #386a80;
   box-shadow: #0ff 1px 1px 2px;
-  color: goldenrod;
   transition: 1s;
 }
 
@@ -260,7 +260,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(21, 58, 63, 96%);
+  background:  linear-gradient(60deg, rgba(21,58, 63,98%), white);
   animation: openModal 0.5s ease-in-out;
 }
 
@@ -268,7 +268,7 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #386a80;
   border-radius: 5px;
   width: 60%;
   height: 60%;
@@ -475,16 +475,19 @@ body {
   right: -75em;
   --borderHeight: 7em;
   --borderWidth: 8em;
+  background: #386a80;
   animation: showSpinner 1s ease-out 0.25s forwards, spinBorder 30s linear 1.25s infinite;
 }
 
 .border-bg-spinner:nth-child(5) {
+  background: #386a80;
   top: -16em;
   right: -75em;
   animation: showSpinner 1s ease-out 0.5s forwards, spinBorder 30s linear 1.5s infinite;
 }
 
 .border-bg-spinner:nth-child(6) {
+  background: #386a80;
   top: -28em;
   right: -65em;
   --borderHeight: 4em;
@@ -494,18 +497,25 @@ body {
 
 .contact-icons {
   color: white;
-  background: linear-gradient( 5deg,#386a80,rgb(58, 57, 57) );
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: x-large;
-  width: 12em;
+  width: 10em;
   position: absolute;
-  right: 0.5%;
-  bottom: 5%;
+  right: 1.5%;
+  bottom: 0%;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.contact-icons i {
+    border-radius: 5px;
+    border: #386a80 1px solid;
+    padding: 5px 10px;
+    color: #386a80;
+    background: white;
 }
 
 @keyframes rotateIcosahedeon {
