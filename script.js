@@ -122,3 +122,19 @@ window.addEventListener('wheel', (e) => {
   }
 }, { passive: false });
 }
+
+function saveFile(url, filename) {
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename || "file-name";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function downloadCV() {
+    const file = "./resources/europassCV.pdf";
+    const url = window.URL.createObjectURL(file);
+    saveFile(url, "myFile.txt");
+    window.URL.revokeObjectURL(url);
+}
