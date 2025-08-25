@@ -28,7 +28,7 @@ function onRippleMove() {
 }
 
 function onProjectCardHover() {
-  document.querySelectorAll(".container").forEach((container) => {
+  document.querySelectorAll(".card").forEach((container) => {
     const span = container.querySelector("span");
 
     container.addEventListener("mouseenter", () => {

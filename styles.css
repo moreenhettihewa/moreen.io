@@ -207,14 +207,25 @@ body {
 }
 
 .container {
-  height: 4em;
-  border-radius: 5px;
   float: left;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: #0ff 1px 1px 2px;
+  transition: 1s;
+}
+
+.card {
   width: 15em;
   padding: 1em;
   margin: 1em;
   cursor: pointer;
-  display: flex;
+  height: 4em;
+  border-radius: 5px;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -223,11 +234,9 @@ body {
   clip-path: polygon(10% 0, 90% 0, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0 75%, 0 25%);
 }
 
-.container:hover {
-  box-shadow: #0ff 1px 1px 2px;
-  transition: 1s;
+.project-image {
+  width: 13em;
 }
-
 /* Container button animations */
 
 .right-arrow,
