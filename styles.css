@@ -225,6 +225,7 @@ body {
 .container:hover {
   box-shadow: #0ff 1px 1px 2px;
   transition: 1s;
+  transform: scale(1.2);
 }
 
 /* Container button animations */

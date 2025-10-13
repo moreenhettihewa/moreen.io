@@ -1,5 +1,5 @@
 onRippleMove()
-onProjectCardHover();
+// onProjectCardHover();
 scrollIntoProjectSection();
 
 function onRippleMove() {
