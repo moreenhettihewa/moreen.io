@@ -1,5 +1,4 @@
 onRippleMove()
-// onProjectCardHover();
 scrollIntoProjectSection();
 
 function onRippleMove() {
@@ -24,29 +23,6 @@ function onRippleMove() {
     ripple.style.transform = "translate(-50%, -50%) scale(0)";
     ripple.style.opacity = "0";
     ripple.style.display = "none";
-  });
-}
-
-function onProjectCardHover() {
-  document.querySelectorAll(".container").forEach((container) => {
-    const span = container.querySelector("span");
-
-    container.addEventListener("mouseenter", () => {
-      const left = document.createElement("div");
-      left.className = "left-arrow left-1-arrow";
-
-      const right = document.createElement("div");
-      right.className = "right-arrow right-1-arrow";
-      
-      container.insertBefore(left, span);
-      container.insertBefore(right, span.nextSibling);
-    });
-
-    container.addEventListener("mouseleave", () => {
-      container
-        .querySelectorAll(".left-arrow, .right-arrow")
-        .forEach((el) => el.remove());
-    });
   });
 }
 
